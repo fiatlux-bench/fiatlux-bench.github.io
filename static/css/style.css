@@ -93,8 +93,6 @@ h1.title{font-size:clamp(1.9rem,4.4vw,2.85rem);max-width:none;text-wrap:pretty}
 .teaser .wrap{padding-block:34px}
 .teaser img{width:100%;border-radius:var(--r);display:block;background:var(--tint)}
 .teaser figure{margin:0}
-.teaser figcaption{margin-top:14px;font-size:.92rem;line-height:1.55;color:var(--ink-2);max-width:74ch}
-.teaser figcaption b{color:var(--ink);font-weight:600}
 
 /* ---------- sections ---------- */
 
