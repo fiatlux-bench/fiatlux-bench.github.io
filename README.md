@@ -12,6 +12,7 @@ index.html              the whole page
 static/css/style.css    visual system (shared with bushuyeu.github.io)
 static/images/          frames from the teleoperated takes
 static/paper/           fiatlux.pdf (arXiv build, non-anonymous)
+static/video/           fiatlux.mp4 (ICRA 2027 accompanying video, 2:58, 17 MB)
 .nojekyll               serve files as-is, no Jekyll pass
 ```
 
@@ -27,6 +28,7 @@ is the source of truth for every number; the page must not diverge from the pape
 | Baseline table | `sections/04-results.tex`, Table `tab:fiatlux_groot` |
 | Scoring, observation modes | `sections/03-method.tex` |
 | Acknowledgements | `sections/07-acknowledgements.tex` |
+| Teaser video | `feat-60-video-submission` worktree, `video/current/final/` |
 
 Two captions are load-bearing and must not be loosened: the `S02stance` and
 `S10stance` frames show the robot **holding** an on-ladder stance after being placed
@@ -44,6 +46,18 @@ To refresh the paper PDF after a rebuild:
 cp ../fiatlux-report-2026-q3/.claude/worktrees/feat-57-arxiv-version/root.pdf \
    static/paper/fiatlux.pdf
 ```
+
+To refresh the video, and regenerate its poster frame:
+
+```bash
+cp ../fiatlux-report-2026-q3/.claude/worktrees/feat-60-video-submission/\
+video/current/final/fiatlux_icra2027_video.mp4 static/video/fiatlux.mp4
+ffmpeg -ss 40 -i static/video/fiatlux.mp4 -frames:v 1 -q:v 3 \
+   static/images/video_poster.jpg -y
+```
+
+The video is served from the repo, not YouTube. Keep it under 100 MB (git's
+per-file ceiling); the whole published site must stay under 1 GB.
 
 ## Credits
 

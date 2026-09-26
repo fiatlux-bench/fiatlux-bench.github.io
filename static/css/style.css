@@ -219,3 +219,7 @@ footer a{color:var(--ink-2)}
   section>.wrap{padding-block:28px}
   .btn{padding:7px 14px;font-size:.85rem}
 }
+
+/* ---------- teaser video ---------- */
+.teaser video{width:100%;display:block;border-radius:var(--r);background:#000;
+  aspect-ratio:16/9;object-fit:contain}

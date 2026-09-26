@@ -12,6 +12,8 @@
 <meta property="og:description" content="One episode: position a step ladder, climb it, swap a spent bulb for a fresh one, dispose of the old one. Twelve subtasks, difficulty-weighted gates, built on NVIDIA Isaac Lab.">
 <meta property="og:url" content="https://fiatlux-bench.github.io/">
 <meta property="og:image" content="https://fiatlux-bench.github.io/static/images/S11.jpg">
+<meta property="og:video" content="https://fiatlux-bench.github.io/static/video/fiatlux.mp4">
+<meta property="og:video:type" content="video/mp4">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement">
 <meta name="twitter:description" content="Twelve subtasks, difficulty-weighted gates, built on NVIDIA Isaac Lab. No released baseline completes a subtask.">
@@ -53,6 +55,10 @@
         <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3.5h8V17H8v-1.5z"/></svg>
         Paper
       </a>
+      <a class="btn ghost" href="#video">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5z"/></svg>
+        Video
+      </a>
       <a class="btn ghost" href="https://github.com/haw-ai-i/fiatlux">
         <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.5 4.7 18.5 5 18.5 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
         Code
@@ -69,12 +75,18 @@
   </div>
 </header>
 
-<!-- ============ teaser ============ -->
-<div class="teaser">
+<!-- ============ teaser video ============ -->
+<div class="teaser" id="video">
   <div class="wrap">
     <figure>
-      <img src="static/images/S11.jpg" alt="A Unitree G1 humanoid, balanced on a step ladder, seating a light bulb into an overhead socket.">
-      <figcaption><b>The heaviest subtask is not the ascent.</b> Seating the bulb while balanced on the ladder (S<sub>11</sub>, difficulty weight 5.40) carries the largest weight in the benchmark: the robot must hold a stable stance at height while closing a fragile grip to within a 50&nbsp;N bound at the hands.</figcaption>
+      <video controls preload="metadata" playsinline
+             poster="static/images/video_poster.jpg"
+             aria-label="Fiatlux benchmark overview video, 2 minutes 58 seconds, with narration.">
+        <source src="static/video/fiatlux.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+        <a href="static/video/fiatlux.mp4">Download the video (MP4, 17&nbsp;MB)</a>.
+      </video>
+      <figcaption><b>Benchmark overview &mdash; 2:58, with narration.</b> The full replacement episode, the twelve subtasks and their success gates, and side-by-side rollouts of teleoperation against zero-shot GR00T N1.7 with each panel's remaining distance to the gate and the share of gate conditions held. Submitted as the ICRA 2027 accompanying video.</figcaption>
     </figure>
   </div>
 </div>
@@ -84,6 +96,7 @@
   <div class="wrap">
     <h2>Contents</h2>
     <ol>
+      <li><a href="#video"><span class="t">Video</span><span class="k">2:58 overview, narrated</span></a></li>
       <li><a href="#abstract"><span class="t">Abstract</span><span class="k">What Fiatlux is</span></a></li>
       <li><a href="#contributions"><span class="t">Contributions</span><span class="k">Six, from the paper</span></a></li>
       <li><a href="#subtasks"><span class="t">Twelve subtasks</span><span class="k">Weights and validation takes</span></a></li>
