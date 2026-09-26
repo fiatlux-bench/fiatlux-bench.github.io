@@ -90,7 +90,7 @@
       <li><a href="#abstract"><span class="t">Abstract</span><span class="k">What Fiatlux is</span></a></li>
       <li><a href="#contributions"><span class="t">Contributions</span><span class="k">Six, from the paper</span></a></li>
       <li><a href="#subtasks"><span class="t">Twelve subtasks</span><span class="k">Weights and validation takes</span></a></li>
-      <li><a href="#takes"><span class="t">Teleoperated takes</span><span class="k">One frame per gate fired</span></a></li>
+      <li><a href="#takes"><span class="t">Teleoperated takes</span><span class="k">One frame per subtask</span></a></li>
       <li><a href="#baselines"><span class="t">Baselines</span><span class="k">GR00T N1.7, zero, random, teleop</span></a></li>
       <li><a href="#scoring"><span class="t">Scoring</span><span class="k">Gates, credit, observation modes</span></a></li>
       <li><a href="#start"><span class="t">Getting started</span><span class="k">Install, record, score</span></a></li>
@@ -211,24 +211,31 @@
       <h2>Teleoperated takes</h2>
     </div>
     <div class="stack prose" style="margin-bottom:22px">
-      <p>One frame from each subtask that has a full-credit take. Every frame below comes from a take that fires that subtask's gate.</p>
+      <p>One frame per subtask. Eight come from a teleoperated take that fires that subtask's gate. The four climbing subtasks have no such take &mdash; those entries are outstanding, not zero.</p>
     </div>
 
     <div class="gallery">
-      <figure><img src="static/images/S01.jpg" alt="The G1 repositioning the step ladder under the fixture." loading="lazy"><figcaption><span class="s">S01</span>Move Ladder</figcaption></figure>
-      <figure><img src="static/images/S03.jpg" alt="The G1 removing the spent bulb from the overhead fixture." loading="lazy"><figcaption><span class="s">S03</span>Remove Old Bulb</figcaption></figure>
-      <figure><img src="static/images/S05.jpg" alt="The G1 carrying the spent bulb toward the disposal crate." loading="lazy"><figcaption><span class="s">S05</span>Carry Bulb to Disposal</figcaption></figure>
-      <figure><img src="static/images/S06.jpg" alt="The G1 placing the spent bulb into the disposal crate." loading="lazy"><figcaption><span class="s">S06</span>Dispose Bulb</figcaption></figure>
-      <figure><img src="static/images/S07.jpg" alt="The G1 approaching the fresh bulb." loading="lazy"><figcaption><span class="s">S07</span>Approach New Bulb</figcaption></figure>
-      <figure><img src="static/images/S08.jpg" alt="The G1 grasping the fresh bulb." loading="lazy"><figcaption><span class="s">S08</span>Grab New Bulb</figcaption></figure>
-      <figure><img src="static/images/S09.jpg" alt="The G1 carrying the fresh bulb back toward the ladder." loading="lazy"><figcaption><span class="s">S09</span>Carry Bulb to Ladder</figcaption></figure>
-      <figure><img src="static/images/S11.jpg" alt="The G1 seating the fresh bulb into the socket." loading="lazy"><figcaption><span class="s">S11</span>Screw in Bulb</figcaption></figure>
-      <figure><img src="static/images/S02stance.jpg" alt="The G1 placed on the top tread of the ladder, unladen, holding the on-ladder stance." loading="lazy"><figcaption><b>On-ladder stance, unladen.</b> The robot <b>holds</b> the stance on the top tread. A stance fixture, not a climb.</figcaption></figure>
-      <figure><img src="static/images/S10stance.jpg" alt="The G1 placed on the top tread of the ladder, carrying the bulb, holding the on-ladder stance." loading="lazy"><figcaption><b>On-ladder stance, laden.</b> The robot <b>holds</b> the stance while carrying the bulb. Also a stance fixture, not a climb.</figcaption></figure>
+      <figure><img src="static/images/S01.jpg" alt="The G1 during move ladder, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S01</span>Move Ladder</figcaption></figure>
+      <figure><div class="ph"><span>No take fires this gate yet</span></div><figcaption><span class="s">S02</span>Climb Ladder</figcaption></figure>
+      <figure><img src="static/images/S03.jpg" alt="The G1 during remove old bulb, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S03</span>Remove Old Bulb</figcaption></figure>
+      <figure><div class="ph"><span>No take fires this gate yet</span></div><figcaption><span class="s">S04</span>Descend with Bulb</figcaption></figure>
+      <figure><img src="static/images/S05.jpg" alt="The G1 during carry bulb to disposal, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S05</span>Carry Bulb to Disposal</figcaption></figure>
+      <figure><img src="static/images/S06.jpg" alt="The G1 during dispose bulb, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S06</span>Dispose Bulb</figcaption></figure>
+      <figure><img src="static/images/S07.jpg" alt="The G1 during approach new bulb, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S07</span>Approach New Bulb</figcaption></figure>
+      <figure><img src="static/images/S08.jpg" alt="The G1 during grab new bulb, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S08</span>Grab New Bulb</figcaption></figure>
+      <figure><img src="static/images/S09.jpg" alt="The G1 during carry bulb to ladder, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S09</span>Carry Bulb to Ladder</figcaption></figure>
+      <figure><div class="ph"><span>No take fires this gate yet</span></div><figcaption><span class="s">S10</span>Climb with Bulb</figcaption></figure>
+      <figure><img src="static/images/S11.jpg" alt="The G1 during screw in bulb, from a teleoperated take that fires the subtask's gate." loading="lazy"><figcaption><span class="s">S11</span>Screw in Bulb</figcaption></figure>
+      <figure><div class="ph"><span>No take fires this gate yet</span></div><figcaption><span class="s">S12</span>Climb Down</figcaption></figure>
     </div>
 
-    <div class="prose" style="margin-top:20px">
-      <p class="note">The two stance frames are recorded with the robot <b>placed</b> on the top tread by inverse kinematics, with no leg joints in the action space. They show that it holds the on-ladder stance with and without the bulb. The transitions to and from that stance &mdash; the climbs themselves &mdash; are not demonstrated, and neither frame is an achievability take for S<sub>02</sub> or S<sub>10</sub>.</p>
+    <h3 style="margin-top:38px">On-ladder stance</h3>
+    <div class="stack prose" style="margin-bottom:18px">
+      <p>The robot is <b>placed</b> on the top tread by inverse kinematics, with no leg joints in the action space. These show that it holds the on-ladder stance with and without the bulb. The transitions to and from that stance &mdash; the climbs themselves &mdash; are not demonstrated, and neither frame is an achievability take for S<sub>02</sub> or S<sub>10</sub>.</p>
+    </div>
+    <div class="gallery pair">
+      <figure><img src="static/images/S02stance.jpg" alt="The G1 placed on the top tread of the ladder, unladen, holding the on-ladder stance." loading="lazy"><figcaption><b>On-ladder stance, unladen.</b> The robot <b>holds</b> the stance on the top tread. A stance fixture, not a climb.</figcaption></figure>
+      <figure><img src="static/images/S10stance.jpg" alt="The G1 placed on the top tread of the ladder, carrying the bulb, holding the on-ladder stance." loading="lazy"><figcaption><b>On-ladder stance, laden.</b> The robot <b>holds</b> the stance while carrying the bulb. Also a stance fixture, not a climb.</figcaption></figure>
     </div>
   </div>
 </section>

@@ -207,6 +207,14 @@ caption b{color:var(--ink-2);font-weight:600}
 .gallery img{width:100%;display:block;border-radius:10px;background:var(--tint)}
 .gallery figcaption{margin-top:8px;font-size:.83rem;line-height:1.5;color:var(--ink-2)}
 .gallery figcaption .s{font-family:"IBM Plex Mono",monospace;font-size:.95em;color:var(--ink-3);margin-right:6px}
+/* Placeholder for a subtask with no take yet. Same aspect ratio as the frames so
+   the grid stays even; dashed to read as absent rather than as a dark frame. */
+.gallery .ph{aspect-ratio:900/566;border-radius:10px;background:var(--tint);
+  border:1px dashed var(--hair);display:flex;align-items:center;justify-content:center;
+  padding:0 18px;text-align:center}
+.gallery .ph span{font-size:.8rem;line-height:1.45;color:var(--ink-3);max-width:18ch}
+/* The stance pair is two frames, not a full-width grid. */
+.gallery.pair{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:680px}
 .gallery figcaption b{color:var(--ink);font-weight:600}
 
 /* ---------- code ---------- */
