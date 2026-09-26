@@ -7,17 +7,34 @@
 <meta name="description" content="Fiatlux: a long-horizon Isaac Lab benchmark in which a Unitree G1 humanoid positions a step ladder, climbs it, and replaces a light bulb in a single episode.">
 <link rel="canonical" href="https://fiatlux-bench.github.io/">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Fiatlux">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement">
 <meta property="og:description" content="One episode: position a step ladder, climb it, swap a spent bulb for a fresh one, dispose of the old one. Twelve subtasks, difficulty-weighted gates, built on NVIDIA Isaac Lab.">
 <meta property="og:url" content="https://fiatlux-bench.github.io/">
-<meta property="og:image" content="https://fiatlux-bench.github.io/static/images/S11.jpg">
-<meta property="og:video" content="https://fiatlux-bench.github.io/static/video/fiatlux.mp4">
-<meta property="og:video:type" content="video/mp4">
+<meta property="og:image" content="https://fiatlux-bench.github.io/static/images/og-card.jpg">
+<meta property="og:image:secure_url" content="https://fiatlux-bench.github.io/static/images/og-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fiatlux: benchmarking robots for electrical work too dangerous for people.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement">
-<meta name="twitter:description" content="Twelve subtasks, difficulty-weighted gates, built on NVIDIA Isaac Lab. No released baseline completes a subtask.">
-<meta name="twitter:image" content="https://fiatlux-bench.github.io/static/images/S11.jpg">
+<meta name="twitter:description" content="Twelve subtasks, difficulty-weighted gates, built on NVIDIA Isaac Lab. No autonomous baseline completes a subtask.">
+<meta name="twitter:image" content="https://fiatlux-bench.github.io/static/images/og-card.jpg">
+<meta name="twitter:image:alt" content="Fiatlux: benchmarking robots for electrical work too dangerous for people.">
+
+<!-- Google Scholar indexing -->
+<meta name="citation_title" content="Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement">
+<meta name="citation_author" content="Bushuyeu, Pavel">
+<meta name="citation_author" content="Chen, Yujin">
+<meta name="citation_author" content="Nikolaev, Anton">
+<meta name="citation_author" content="Shu, Brian">
+<meta name="citation_author" content="Molybog, Igor">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_pdf_url" content="https://fiatlux-bench.github.io/static/paper/fiatlux.pdf">
+<meta name="citation_abstract_html_url" content="https://fiatlux-bench.github.io/">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
@@ -26,6 +43,174 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;450&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://fiatlux-bench.github.io/#article",
+      "name": "Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement",
+      "headline": "Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement",
+      "description": "A light-bulb replacement benchmark built on NVIDIA Isaac Lab. In one episode a Unitree G1 humanoid positions a step ladder under a fixture, climbs it, exchanges a spent bulb for a fresh one, and disposes of the spent one. Twelve subtask environments scored on difficulty-weighted gates.",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Pavel Bushuyeu"
+        },
+        {
+          "@type": "Person",
+          "name": "Yujin Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Nikolaev"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Shu"
+        },
+        {
+          "@type": "Person",
+          "name": "Igor Molybog"
+        }
+      ],
+      "datePublished": "2026",
+      "inLanguage": "en",
+      "url": "https://fiatlux-bench.github.io/",
+      "image": "https://fiatlux-bench.github.io/static/images/og-card.jpg",
+      "keywords": [
+        "humanoid robotics",
+        "benchmark",
+        "ladder climbing",
+        "Isaac Lab",
+        "Unitree G1",
+        "vision-language-action",
+        "reinforcement learning",
+        "teleoperation"
+      ],
+      "about": "Long-horizon humanoid manipulation and vertical mobility benchmarking"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://fiatlux-bench.github.io/#code",
+      "name": "Fiatlux benchmark",
+      "codeRepository": "https://github.com/haw-ai-i/fiatlux",
+      "programmingLanguage": "Python",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Pavel Bushuyeu"
+        },
+        {
+          "@type": "Person",
+          "name": "Yujin Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Nikolaev"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Shu"
+        },
+        {
+          "@type": "Person",
+          "name": "Igor Molybog"
+        }
+      ],
+      "runtimePlatform": "NVIDIA Isaac Lab"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Fiatlux teleoperation demonstrations",
+      "url": "https://huggingface.co/datasets/haw-ai-i/fiatlux-teleoperation",
+      "description": "Teleoperated demonstration takes for the Fiatlux subtasks, recorded in a VR headset and scored offline.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Pavel Bushuyeu"
+        },
+        {
+          "@type": "Person",
+          "name": "Yujin Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Nikolaev"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Shu"
+        },
+        {
+          "@type": "Person",
+          "name": "Igor Molybog"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Fiatlux benchmark assets",
+      "url": "https://huggingface.co/datasets/haw-ai-i/fiatlux-assets",
+      "description": "USD scene assets for the Fiatlux benchmark: the robot, ladder, fixtures, bulbs and room dressing.",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Pavel Bushuyeu"
+        },
+        {
+          "@type": "Person",
+          "name": "Yujin Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Nikolaev"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Shu"
+        },
+        {
+          "@type": "Person",
+          "name": "Igor Molybog"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Fiatlux policy baselines",
+      "url": "https://huggingface.co/datasets/haw-ai-i/fiatlux-policy-baselines",
+      "description": "Recorded rollouts for the released Fiatlux baselines: zero, random and zero-shot GR00T N1.7.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Pavel Bushuyeu"
+        },
+        {
+          "@type": "Person",
+          "name": "Yujin Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "Anton Nikolaev"
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Shu"
+        },
+        {
+          "@type": "Person",
+          "name": "Igor Molybog"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
