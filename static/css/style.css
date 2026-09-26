@@ -168,15 +168,17 @@ th .hs{display:block;margin-top:2px;font-size:.74rem;font-weight:400;color:var(-
 th.num .hs{margin-left:auto}
 td{padding:8px 14px;border-bottom:1px solid var(--hair-soft);vertical-align:middle}
 td:first-child{padding-left:0} td:last-child{padding-right:0}
-tbody tr:last-child td{border-bottom:none}
+/* Close the table with a rule at the same weight as the header, so the body is
+   bounded top and bottom rather than trailing off. */
+tbody tr:last-child td{border-bottom:1px solid var(--hair)}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 td.num{font-family:"IBM Plex Mono",monospace;font-size:.82rem}
 td.id{font-family:"IBM Plex Mono",monospace;font-size:.82rem;color:var(--ink-3)}
-tr.total td{border-top:1px solid var(--hair);border-bottom:none;font-weight:600}
+tr.total td{border-top:1px solid var(--hair);font-weight:600}
 tr.total td.num{font-weight:500}
 .dash{color:var(--ink-3)}
 .lead-val{color:var(--sat-ink)}
-caption{caption-side:bottom;text-align:left;padding-top:14px;
+caption{caption-side:bottom;text-align:left;padding-top:26px;
   font-size:.84rem;line-height:1.55;color:var(--ink-3);max-width:80ch}
 caption b{color:var(--ink-2);font-weight:600}
 
