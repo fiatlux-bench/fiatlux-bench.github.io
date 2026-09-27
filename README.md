@@ -40,6 +40,13 @@ outstanding, not zero.
 
 Edit and push to `main`; GitHub Pages serves the repo root.
 
+**After editing `static/css/style.css`, run `python3 stamp.py` before committing.**
+It rewrites the stylesheet link with a hash of the file's contents. GitHub Pages
+sends `cache-control: max-age=600` on every file and the header cannot be changed,
+so the HTML and the CSS expire independently. Without the stamp a visitor can hold
+new markup against a ten-minute-old stylesheet, which has broken this page's layout
+more than once.
+
 To refresh the paper PDF after a rebuild:
 
 ```bash
