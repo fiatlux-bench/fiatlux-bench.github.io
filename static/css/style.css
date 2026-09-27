@@ -241,4 +241,3 @@ footer a{color:var(--ink-2)}
 .facade:focus-visible{outline:2px solid var(--link);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.facade .playbtn svg{transition:none}}
 .ytframe{width:100%;aspect-ratio:16/9;display:block;border:0;border-radius:var(--r);background:#000}
-.videoalt{margin-top:10px;font-size:.84rem;line-height:1.5;color:var(--ink-3)}
